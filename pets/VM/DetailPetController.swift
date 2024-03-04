@@ -6,6 +6,7 @@
 //
 import UIKit
 import SnapKit
+import Kingfisher
 
 class DetailPetController: UIViewController {
     
@@ -47,6 +48,12 @@ class DetailPetController: UIViewController {
         return label
     }()
     
+    let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,6 +62,10 @@ class DetailPetController: UIViewController {
         
         setupUI()
         updateUI()
+        
+        if let imageUrl = URL(string: pet?.image ?? "") {
+            imageView.kf.setImage(with: imageUrl)
+        }
     }
     
     private func setupUI() {
@@ -64,6 +75,7 @@ class DetailPetController: UIViewController {
         view.addSubview(imageLabel)
         view.addSubview(ageLabel)
         view.addSubview(genderLabel)
+        view.addSubview(imageView)
         
         idLabel.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
@@ -95,6 +107,12 @@ class DetailPetController: UIViewController {
             make.centerX.equalToSuperview()
         }
         
+        imageView.snp.makeConstraints { make in
+            make.top.equalTo(genderLabel.snp.bottom).offset(20)
+            make.centerX.equalToSuperview()
+            make.width.height.equalTo(150)
+        }
+        
         idLabel.font = UIFont.boldSystemFont(ofSize: 16)
         nameLabel.font = UIFont.boldSystemFont(ofSize: 20)
         adoptedLabel.font = UIFont.systemFont(ofSize: 16)
@@ -109,7 +127,7 @@ class DetailPetController: UIViewController {
         ageLabel.textColor = UIColor.darkGray
         genderLabel.textColor = UIColor.darkGray
     }
-
+    
     
     private func updateUI() {
         guard let pet = pet else {
