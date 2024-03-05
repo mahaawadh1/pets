@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		10AA8B892B95BFD3003F0740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8B882B95BFD3003F0740 /* AppDelegate.swift */; };
 		10AA8B8B2B95BFD3003F0740 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8B8A2B95BFD3003F0740 /* SceneDelegate.swift */; };
-		10AA8B8D2B95BFD3003F0740 /* PetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8B8C2B95BFD3003F0740 /* PetTableViewController.swift */; };
+		10AA8B8D2B95BFD3003F0740 /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8B8C2B95BFD3003F0740 /* PetViewController.swift */; };
 		10AA8B922B95BFD4003F0740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AA8B912B95BFD4003F0740 /* Assets.xcassets */; };
 		10AA8B952B95BFD4003F0740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AA8B932B95BFD4003F0740 /* LaunchScreen.storyboard */; };
 		10AA8B9E2B95C007003F0740 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 10AA8B9D2B95C007003F0740 /* Alamofire */; };
@@ -18,22 +18,25 @@
 		10AA8BA82B95C1F2003F0740 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8BA72B95C1F2003F0740 /* NetworkManager.swift */; };
 		10AA8BAB2B95C5B4003F0740 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 10AA8BAA2B95C5B4003F0740 /* SnapKit */; };
 		10AA8BAD2B95C5B4003F0740 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 10AA8BAC2B95C5B4003F0740 /* SnapKit-Dynamic */; };
-		10AA8BAF2B95D8E2003F0740 /* DetailPetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8BAE2B95D8E2003F0740 /* DetailPetController.swift */; };
+		10AA8BAF2B95D8E2003F0740 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8BAE2B95D8E2003F0740 /* PetDetailViewController.swift */; };
 		10AA8BB22B95E3AB003F0740 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 10AA8BB12B95E3AB003F0740 /* Kingfisher */; };
 		10AA8BB42B95E58C003F0740 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 10AA8BB32B95E58C003F0740 /* Kingfisher */; };
+		10AA8BB72B9713B3003F0740 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 10AA8BB62B9713B3003F0740 /* Eureka */; };
+		10AA8BB92B972B3B003F0740 /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8BB82B972B3B003F0740 /* AddPetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10AA8B852B95BFD3003F0740 /* pets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AA8B882B95BFD3003F0740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10AA8B8A2B95BFD3003F0740 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10AA8B8C2B95BFD3003F0740 /* PetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewController.swift; sourceTree = "<group>"; };
+		10AA8B8C2B95BFD3003F0740 /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 		10AA8B912B95BFD4003F0740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10AA8B942B95BFD4003F0740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10AA8B962B95BFD4003F0740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10AA8BA12B95C019003F0740 /* pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pet.swift; sourceTree = "<group>"; };
 		10AA8BA72B95C1F2003F0740 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		10AA8BAE2B95D8E2003F0740 /* DetailPetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPetController.swift; sourceTree = "<group>"; };
+		10AA8BAE2B95D8E2003F0740 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		10AA8BB82B972B3B003F0740 /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 				10AA8B9E2B95C007003F0740 /* Alamofire in Frameworks */,
 				10AA8BA02B95C007003F0740 /* AlamofireDynamic in Frameworks */,
 				10AA8BAD2B95C5B4003F0740 /* SnapKit-Dynamic in Frameworks */,
+				10AA8BB72B9713B3003F0740 /* Eureka in Frameworks */,
 				10AA8BB22B95E3AB003F0740 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,8 +90,8 @@
 		10AA8BA32B95C163003F0740 /* VM */ = {
 			isa = PBXGroup;
 			children = (
-				10AA8B8C2B95BFD3003F0740 /* PetTableViewController.swift */,
-				10AA8BAE2B95D8E2003F0740 /* DetailPetController.swift */,
+				10AA8B8C2B95BFD3003F0740 /* PetViewController.swift */,
+				10AA8BAE2B95D8E2003F0740 /* PetDetailViewController.swift */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				10AA8BA72B95C1F2003F0740 /* NetworkManager.swift */,
+				10AA8BB82B972B3B003F0740 /* AddPetViewController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				10AA8BAC2B95C5B4003F0740 /* SnapKit-Dynamic */,
 				10AA8BB12B95E3AB003F0740 /* Kingfisher */,
 				10AA8BB32B95E58C003F0740 /* Kingfisher */,
+				10AA8BB62B9713B3003F0740 /* Eureka */,
 			);
 			productName = pets;
 			productReference = 10AA8B852B95BFD3003F0740 /* pets.app */;
@@ -173,6 +179,7 @@
 				10AA8B9C2B95C007003F0740 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				10AA8BA92B95C5B4003F0740 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				10AA8BB02B95E3AB003F0740 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				10AA8BB52B9713B3003F0740 /* XCRemoteSwiftPackageReference "Eureka" */,
 			);
 			productRefGroup = 10AA8B862B95BFD3003F0740 /* Products */;
 			projectDirPath = "";
@@ -201,10 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				10AA8BA82B95C1F2003F0740 /* NetworkManager.swift in Sources */,
-				10AA8B8D2B95BFD3003F0740 /* PetTableViewController.swift in Sources */,
+				10AA8B8D2B95BFD3003F0740 /* PetViewController.swift in Sources */,
 				10AA8BA22B95C019003F0740 /* pet.swift in Sources */,
+				10AA8BB92B972B3B003F0740 /* AddPetViewController.swift in Sources */,
 				10AA8B892B95BFD3003F0740 /* AppDelegate.swift in Sources */,
-				10AA8BAF2B95D8E2003F0740 /* DetailPetController.swift in Sources */,
+				10AA8BAF2B95D8E2003F0740 /* PetDetailViewController.swift in Sources */,
 				10AA8B8B2B95BFD3003F0740 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +450,14 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		10AA8BB52B9713B3003F0740 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -474,6 +490,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 10AA8BB02B95E3AB003F0740 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		10AA8BB62B9713B3003F0740 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10AA8BB52B9713B3003F0740 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
